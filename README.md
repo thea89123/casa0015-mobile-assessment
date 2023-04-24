@@ -33,13 +33,14 @@ In the end, Ming was satisfied that he had been given comprehensive weather info
 4. Search for weather conditions in other areas
 5. Provide extreme weather warning notifications
 6. Trip planning page, where users can select the departure location, destination, travel dates and number of days
+
 **Further functional points for the future:**
 1. Automatically retrieves and displays weather data for departure and destination based on user input
 2. Automatically generated trip details page, including each day's itinerary, including weather conditions, transport advice and suggestions for places to visit
 
 
 ## Wireframe
-![image](https://user-images.githubusercontent.com/91799774/167428711-aeb675af-e17e-4749-9a3d-648a04e2fa0e.png)
+![image](Weather Guardian/Frame 10.png)
 
 ## Design
 ![image](https://user-images.githubusercontent.com/91799774/167440009-32975829-d12b-4889-8aa2-150e19c5a012.png)

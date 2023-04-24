@@ -40,10 +40,8 @@ In the end, Ming was satisfied that he had been given comprehensive weather info
 
 
 ## Wireframe
-![image](https://github.com/thea89123/casa0015-mobile-assessment/blob/74798e38a797667ea84d1fff80c5c4ec079f4c35/Weather%20Guardian/Frame%2011.png)
-![image](https://github.com/thea89123/casa0015-mobile-assessment/blob/d1a6ccee6c94150e505fd19040c43289c5fd29a9/Weather%20Guardian/Frame%2010.png)
-![image](https://github.com/thea89123/casa0015-mobile-assessment/blob/26e97263b508029dff7da05537018fa6f53b468e/Weather%20Guardian/Frame%209.png)
-![image](https://github.com/thea89123/casa0015-mobile-assessment/blob/31dd0059edd7a2a6d8e8dc22358f9da2666a276b/Weather%20Guardian/Frame%208.png)
+![image](https://github.com/thea89123/casa0015-mobile-assessment/blob/433037e9224c3c424e2fd3b67d69958f281311e0/Weather%20Guardian/Frame%201.JPG)
+
 
 ## Design
 ![image](https://user-images.githubusercontent.com/91799774/167440009-32975829-d12b-4889-8aa2-150e19c5a012.png)

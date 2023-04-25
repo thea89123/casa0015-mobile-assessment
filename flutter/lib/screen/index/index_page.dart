@@ -1,6 +1,7 @@
 import 'package:evapp/screen/home/home_page.dart';
 import 'package:evapp/screen/index/map_page.dart';
 import 'package:evapp/screen/index/search_page.dart';
+import 'package:evapp/screen/plan/plan_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
@@ -32,10 +33,15 @@ class _IndexPageState extends State<IndexPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.wallet_travel),
+            label: 'Plan',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.map),
@@ -59,6 +65,7 @@ class _IndexPageState extends State<IndexPage> {
         physics: const NeverScrollableScrollPhysics(),
         children: [
           HomePage(data: HomeRouteData(const LatLng(51.3028, 0), 'London')),
+          const PlanPage(),
           const MapPage(),
           const SearchPage(),
         ],

@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:evapp/model/storge/travel_plan_hive.dart';
 import 'package:evapp/screen/firebase/firebase_options.dart';
 import 'package:evapp/flutter_local_notifications.dart';
 import 'package:evapp/routes.dart';
@@ -11,6 +12,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await TravelPlanHive.initHive();
   await Firebase.initializeApp(options: Platform.isAndroid ? androidOption : iosOption);
   FirebaseUIAuth.configureProviders([
     EmailAuthProvider(),
@@ -27,7 +29,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.indigo),
       locale: const Locale('en'),
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,

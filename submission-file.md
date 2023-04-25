@@ -37,13 +37,12 @@ Additionally, the trip planning page allows users to enter their departure and d
 
 Future updates to the app will include an automatic retrieval and display of weather data for departure and destination based on user input, as well as an automatically generated trip details page.
 
-for citation - [https://www.scribbr.co.uk/referencing/harvard-website-reference/](https://www.scribbr.co.uk/referencing/harvard-website-reference/)
 
 ## Biblography
 
-1. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s). <http://google.com>
-
-2. Last name, First initial. (Year published). Title. Edition. (Only include the edition if it is not the first edition) City published: Publisher, Page(s).  <http://google.com>
+1. Google, Adding Google Maps to a Flutter app, Available at: https://codelabs.developers.google.com/codelabs/google-maps-in-flutter#3.
+2. Flutter.dev, google_maps_flutter, Available at: https://pub.dev/packages/google_maps_flutter (Accessed: May 2022).
+3. Dash-overflow.net, provider 6.0.2, Available at: https://pub.dev/packages/provider (Accessed: May 2022).
 
 ----
 

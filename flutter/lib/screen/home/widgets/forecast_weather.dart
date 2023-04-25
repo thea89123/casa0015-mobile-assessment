@@ -27,7 +27,7 @@ class DayForecastView extends StatelessWidget {
     if (dayDesc == nightDesc) {
       return "$dayDesc";
     }
-    return "$dayDesc转$nightDesc";
+    return "$dayDesc To $nightDesc";
   }
 
   String _getTemperatureDesc(int index) {
@@ -71,8 +71,9 @@ class DayForecastView extends StatelessWidget {
             return BlurWidget(
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12),
-                width: 200,
+                width: 250,
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Row(
@@ -83,35 +84,26 @@ class DayForecastView extends StatelessWidget {
                                 fontSize: 17,
                                 fontWeight: FontWeight.bold,
                                 letterSpacing: 1)),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Text(_getWeatherDesc(index),
-                              textAlign: TextAlign.end,
-                              style: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.bold,
-                                  letterSpacing: 1)),
-                        )
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Text(_getTemperatureDesc(index),
-                              style: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 19,
-                                  letterSpacing: 0.2,
-                                  fontWeight: FontWeight.w600)),
-                        ),
-                        const SizedBox(width: 12),
-                        Text(_getAqiDesc(index),
-                            textAlign: TextAlign.end,
+                        const Spacer(),
+                        Text(_getTemperatureDesc(index),
                             style: const TextStyle(
-                                color: Colors.white, fontSize: 14, fontWeight: FontWeight.w800)),
+                                color: Colors.white,
+                                fontSize: 19,
+                                letterSpacing: 0.2,
+                                fontWeight: FontWeight.w600)),
                       ],
                     ),
+                    Text(_getAqiDesc(index),
+                        textAlign: TextAlign.end,
+                        style: const TextStyle(
+                            color: Colors.white, fontSize: 14, fontWeight: FontWeight.w800)),
+                    Text(_getWeatherDesc(index),
+                        textAlign: TextAlign.end,
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 1)),
                   ],
                 ),
               ),

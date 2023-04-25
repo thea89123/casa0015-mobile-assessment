@@ -38,7 +38,7 @@ class RealtimeView extends StatelessWidget {
           ],
         ),
         Container(
-          margin: const EdgeInsets.only(left: 20),
+          margin: const EdgeInsets.only(left: 12),
           child: Row(
             children: [
               Text(
@@ -57,7 +57,7 @@ class RealtimeView extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         Container(
-          margin: const EdgeInsets.only(left: 20),
+          margin: const EdgeInsets.only(left: 12),
           child: Text(
             "${entity.result?.forecastKeypoint}",
             style: const TextStyle(fontSize: 15, color: Colors.white, fontWeight: FontWeight.bold),

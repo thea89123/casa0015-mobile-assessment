@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> with AutomaticKeepAliveClientMixin 
                   context.goNamed(Routes.login);
                 },
                 title: const Text(
-                  '退出登录',
+                  'Sign out',
                   style: TextStyle(
                     fontSize: 18,
                   ),

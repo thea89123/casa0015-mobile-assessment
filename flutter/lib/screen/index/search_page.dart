@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:geocode/geocode.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:collection/collection.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
@@ -26,7 +25,7 @@ class _SearchPageState extends State<SearchPage> {
 
   final Set<Marker> _markers = {};
 
-  final GeoCode geoCode = GeoCode();
+  final GeoCode geoCode = GeoCode(apiKey: '328469479873037358939x48304');
 
   @override
   void initState() {

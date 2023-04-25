@@ -163,13 +163,13 @@ class __EmailVerificationScreenContentState
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         const Align(
-          child: Title(text: '驗證您的電子郵件'),
+          child: Title(text: 'Verify your email'),
         ),
         const SizedBox(height: 32),
         const Text(
-          '驗證電子郵件已發送到您的電子郵件地址。'
-          '請檢查您的電子郵件，然後單擊鏈接進行驗證'
-          '您的電子郵件地址。',
+          'A verification email has been sent to your email address.'
+          'Please check your email and click the link to verify'
+          'Your email address.',
         ),
         const SizedBox(height: 32),
         if (state == EmailVerificationState.pending)
@@ -188,13 +188,13 @@ class __EmailVerificationScreenContentState
           const LoadingIndicator(size: 32, borderWidth: 2),
         if (state == EmailVerificationState.unverified) ...[
           Text(
-            "我們無法驗證您的電子郵件地址。",
+            "We couldn't verify your email address.",
             textAlign: TextAlign.center,
             style: TextStyle(color: Theme.of(context).colorScheme.error),
           ),
           const SizedBox(height: 16),
           UniversalButton(
-            text: '重新發送驗證電子郵件',
+            text: 'Resend the verification email',
             onPressed: () {
               controller.sendVerificationEmail(
                 Theme.of(context).platform,

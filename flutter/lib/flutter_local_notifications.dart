@@ -14,6 +14,7 @@ Future initLocalNotification() async {
       const InitializationSettings(android: initializationSettingsAndroid);
   await flutterLocalNotificationsPlugin.initialize(initializationSettings,
       onDidReceiveNotificationResponse: onDidReceiveNotificationResponse);
+  flutterLocalNotificationsPlugin.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()?.requestPermission();
 }
 
 void onDidReceiveNotificationResponse(NotificationResponse notificationResponse) async {
@@ -26,5 +27,5 @@ Future showNotification(String body) async {
       importance: Importance.max, priority: Priority.high);
   NotificationDetails notificationDetails =
       NotificationDetails(android: androidNotificationDetails);
-  await flutterLocalNotificationsPlugin.show(body.hashCode, '天气预警!', body, notificationDetails);
+  await flutterLocalNotificationsPlugin.show(body.hashCode, 'Weather warning!', body, notificationDetails);
 }

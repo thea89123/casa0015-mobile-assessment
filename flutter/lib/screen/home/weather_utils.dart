@@ -5,26 +5,26 @@ import 'weather_model_entity.dart';
 
 class WeatherUtils {
   static final weatherMap = {
-    "CLEAR_DAY": "晴",
-    "CLEAR_NIGHT": "晴",
-    "PARTLY_CLOUDY_DAY": "多云",
-    "PARTLY_CLOUDY_NIGHT": "多云",
-    "CLOUDY": "阴",
-    "LIGHT_HAZE": "霾",
-    "MODERATE_HAZE": "霾",
-    "HEAVY_HAZE": "霾",
-    "LIGHT_RAIN": "小雨",
-    "MODERATE_RAIN": "中雨",
-    "HEAVY_RAIN": "大雨",
-    "STORM_RAIN": "暴雨",
-    "FOG": "雾",
-    "LIGHT_SNOW": "小雪",
-    "MODERATE_SNOW": "中雪",
-    "HEAVY_SNOW": "大雪",
-    "STORM_SNOW": "暴雪",
-    "DUST": "浮尘",
-    "SAND": "沙尘",
-    "WIND": "大风",
+    "CLEAR_DAY": "sunny",
+    "CLEAR_NIGHT": "sunnyNight",
+    "PARTLY_CLOUDY_DAY": "cloudy",
+    "PARTLY_CLOUDY_NIGHT": "cloudyNight",
+    "CLOUDY": "overcast",
+    "LIGHT_HAZE": "hazy",
+    "MODERATE_HAZE": "hazy",
+    "HEAVY_HAZE": "hazy",
+    "LIGHT_RAIN": "lightRainy",
+    "MODERATE_RAIN": "middleRainy",
+    "HEAVY_RAIN": "heavyRainy",
+    "STORM_RAIN": "thunder",
+    "FOG": "foggy",
+    "LIGHT_SNOW": "lightSnow",
+    "MODERATE_SNOW": "middleSnow",
+    "HEAVY_SNOW": "heavySnow",
+    "STORM_SNOW": "heavySnow",
+    "DUST": "dusty",
+    "SAND": "dusty",
+    "WIND": "overcast",
   };
 
   static final weatherTypeMap = {
@@ -88,7 +88,7 @@ class WeatherUtils {
 
   static convertDesc(String? skycon) {
     if (weatherMap[skycon] == null || weatherMap[skycon]!.isEmpty) {
-      return "晴";
+      return "sunny";
     }
     return weatherMap[skycon];
   }
@@ -102,22 +102,22 @@ class WeatherUtils {
 
   static String getAqiDesc(int aqi) {
     if (aqi >= 0 && aqi <= 50) {
-      return "优";
+      return "excellent";
     }
     if (aqi > 50 && aqi <= 100) {
-      return "良";
+      return "good";
     }
     if (aqi > 100 && aqi <= 150) {
-      return "轻度污染";
+      return "Mild contamination";
     }
     if (aqi > 150 && aqi <= 200) {
-      return "中度污染";
+      return "Moderate contamination";
     }
     if (aqi > 200 && aqi <= 300) {
-      return "重度污染";
+      return "Heavy contamination";
     }
     if (aqi > 300) {
-      return "严重污染";
+      return "Heavily polluted";
     }
     return "";
   }
@@ -174,11 +174,11 @@ class WeatherUtils {
     DateTime targetTime = DateTime.parse(time.substring(0, time.length - 6));
     DateTime nowTime = DateTime.now();
     if (targetTime.day == nowTime.day) {
-      return "今天";
+      return "Today";
     } else if (targetTime.day == nowTime.day + 1) {
-      return "明天";
+      return "Tomorrow";
     } else if (targetTime.day == nowTime.day - 1) {
-      return "昨天";
+      return "Yesterday";
     } else {
       return _getWeekDes(targetTime.weekday);
     }
@@ -187,19 +187,19 @@ class WeatherUtils {
   static String _getWeekDes(int weekDay) {
     switch (weekDay) {
       case 1:
-        return "周一";
+        return "Monday";
       case 2:
-        return "周二";
+        return "Tuesday";
       case 3:
-        return "周三";
+        return "Wednesday";
       case 4:
-        return "周四";
+        return "Thursday";
       case 5:
-        return "周五";
+        return "Friday";
       case 6:
-        return "周六";
+        return "Saturday";
       case 7:
-        return "周日";
+        return "Sunday";
     }
     return "";
   }

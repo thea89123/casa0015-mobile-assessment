@@ -58,7 +58,7 @@ class _IndexPageState extends State<IndexPage> {
         controller: _controller,
         physics: const NeverScrollableScrollPhysics(),
         children: [
-          HomePage(data: HomeRouteData(const LatLng(50.5413, 5.6470), '伦敦')),
+          HomePage(data: HomeRouteData(const LatLng(51.3028, 0), 'London')),
           const MapPage(),
           const SearchPage(),
         ],

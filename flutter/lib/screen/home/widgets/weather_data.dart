@@ -11,9 +11,9 @@ class WeatherData extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int? aqiValue = entity.result?.realtime?.airQuality?.aqi?.chn;
-    String aqiValueStr = aqiValue == null ? "0" : "$aqiValue";
-    double aqiRatio = aqiValue == null ? 0 : aqiValue.toDouble() / 500;
+    int? comfortIndex = entity.result?.realtime?.lifeIndex?.comfort?.index;
+    double comfortRatio = comfortIndex == null ? 0 : comfortIndex.toDouble() / 13;
+    String comfortStr = '${(comfortRatio * 100).toInt()}%';
     double humidityValue = entity.result?.realtime?.humidity ?? 0;
     String humidityStr = "${(humidityValue * 100).toInt()}%";
 
@@ -26,7 +26,7 @@ class WeatherData extends StatelessWidget {
               child: Container(
                 margin: const EdgeInsets.all(12),
                 child: LiquidCircularProgressIndicator(
-                  value: aqiRatio,
+                  value: comfortRatio,
                   valueColor: const AlwaysStoppedAnimation(Colors.pink),
                   backgroundColor: Colors.white,
                   borderColor: Colors.redAccent,
@@ -36,14 +36,14 @@ class WeatherData extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Text(
-                        aqiValueStr,
+                        comfortStr,
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
-                        '${entity.result?.realtime?.airQuality?.description?.chn}',
+                        '${entity.result?.realtime?.lifeIndex?.comfort?.desc}',
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
@@ -78,7 +78,7 @@ class WeatherData extends StatelessWidget {
                         style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                       ),
                       const Text(
-                        '体感',
+                        'Experience',
                         style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                       ),
                     ],

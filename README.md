@@ -47,7 +47,7 @@ In the end, Ming was satisfied that he had been given comprehensive weather info
 
 ## Video Demo
 
-![Video Demo](https://img.youtube.com/vi/rUMUngbM_Zg/0.jpg)](https://www.youtube.com/watch?v=rUMUngbM_Zg)
+[![Video Demo](https://img.youtube.com/vi/rUMUngbM_Zg/0.jpg)](https://www.youtube.com/watch?v=rUMUngbM_Zg)
 
 
 ## Challenges and Future improvement

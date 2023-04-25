@@ -70,7 +70,7 @@ class DayForecastView extends StatelessWidget {
           itemBuilder: (context, index) {
             return BlurWidget(
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.all(12),
                 width: 250,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

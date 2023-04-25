@@ -12,15 +12,17 @@ class WeatherData extends StatelessWidget {
   Widget build(BuildContext context) {
     final realtime = entity.result?.realtime;
     final ultraviolet = realtime?.lifeIndex?.ultraviolet?.desc ?? '';
-    final airQuality = realtime?.airQuality?.description?.usa ?? '';
-    //湿度、降水、紫外线、空气质量、日出日落时间吧
+    final airQuality =
+        realtime?.airQuality?.description?.usa ?? realtime?.airQuality?.description?.chn ?? '';
     return BlurWidget(
       child: Padding(
         padding: const EdgeInsets.all(12),
         child: Column(
           children: [
             _DataItem(title: 'humidity', data: '${((realtime?.humidity ?? 0) * 100).toInt()}%'),
-            _DataItem(title: 'precipitation', data: '${realtime?.precipitation?.local?.intensity ?? 0}mm'),
+            _DataItem(
+                title: 'precipitation',
+                data: '${realtime?.precipitation?.local?.intensity ?? 0}mm'),
             _DataItem(title: 'airQuality', data: airQuality.isEmpty ? '-' : airQuality),
             _DataItem(title: 'ultraviolet', data: ultraviolet.isEmpty ? '-' : ultraviolet),
           ],

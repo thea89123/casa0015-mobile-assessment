@@ -27,9 +27,9 @@ class WeatherData extends StatelessWidget {
                 margin: const EdgeInsets.all(12),
                 child: LiquidCircularProgressIndicator(
                   value: comfortRatio,
-                  valueColor: const AlwaysStoppedAnimation(Colors.pink),
+                  valueColor: const AlwaysStoppedAnimation(Colors.blue),
                   backgroundColor: Colors.white,
-                  borderColor: Colors.redAccent,
+                  borderColor: Colors.blueAccent,
                   borderWidth: 5.0,
                   direction: Axis.vertical,
                   center: Column(
@@ -65,9 +65,9 @@ class WeatherData extends StatelessWidget {
                 margin: const EdgeInsets.all(12),
                 child: LiquidCircularProgressIndicator(
                   value: humidityValue,
-                  valueColor: const AlwaysStoppedAnimation(Colors.pink),
+                  valueColor: const AlwaysStoppedAnimation(Colors.blue),
                   backgroundColor: Colors.white,
-                  borderColor: Colors.redAccent,
+                  borderColor: Colors.blueAccent,
                   borderWidth: 5.0,
                   direction: Axis.vertical,
                   center: Column(

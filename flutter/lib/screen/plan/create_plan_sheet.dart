@@ -38,7 +38,7 @@ class _CreatePlanSheetState extends State<CreatePlanSheet> {
             children: [
               Align(
                 child: Text(
-                  '创建旅行',
+                  'Create a trip',
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
               ),
@@ -68,7 +68,7 @@ class _CreatePlanSheetState extends State<CreatePlanSheet> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          '起点',
+                          'starting',
                           textAlign: TextAlign.center,
                           style: Theme.of(context).textTheme.bodyLarge,
                         ),
@@ -97,7 +97,7 @@ class _CreatePlanSheetState extends State<CreatePlanSheet> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          '终点',
+                          'terminal',
                           textAlign: TextAlign.center,
                           style: Theme.of(context).textTheme.bodyLarge,
                         ),
@@ -136,7 +136,7 @@ class _CreatePlanSheetState extends State<CreatePlanSheet> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            '开始时间',
+                            'Start time',
                             textAlign: TextAlign.center,
                             style: Theme.of(context).textTheme.bodyLarge,
                           ),
@@ -167,7 +167,7 @@ class _CreatePlanSheetState extends State<CreatePlanSheet> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            '结束时间',
+                            'End time',
                             textAlign: TextAlign.center,
                             style: Theme.of(context).textTheme.bodyLarge,
                           ),
@@ -191,7 +191,7 @@ class _CreatePlanSheetState extends State<CreatePlanSheet> {
                           }
                         : null,
                     child: Text(
-                      '创建',
+                      'CREATE',
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(color: Colors.white),
                     ),
                   ),

@@ -1,6 +1,5 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:evapp/model/storge/model/travel_plan_model.dart';
-import 'package:evapp/model/storge/travel_plan_hive.dart';
 import 'package:evapp/screen/plan/create_plan_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
@@ -19,7 +18,7 @@ class _PlanPageState extends State<PlanPage> with AutomaticKeepAliveClientMixin 
     super.build(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('旅途计划'),
+        title: const Text('Trip planning'),
         centerTitle: true,
         actions: [
           IconButton(
@@ -53,7 +52,7 @@ class _PlanPageState extends State<PlanPage> with AutomaticKeepAliveClientMixin 
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            '起点',
+                            'starting',
                             textAlign: TextAlign.center,
                             style: Theme.of(context).textTheme.bodyLarge,
                           ),
@@ -73,7 +72,7 @@ class _PlanPageState extends State<PlanPage> with AutomaticKeepAliveClientMixin 
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            '终点',
+                            'terminal',
                             textAlign: TextAlign.center,
                             style: Theme.of(context).textTheme.bodyLarge,
                           ),
@@ -93,7 +92,7 @@ class _PlanPageState extends State<PlanPage> with AutomaticKeepAliveClientMixin 
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            '开始时间',
+                            'Start time',
                             textAlign: TextAlign.center,
                             style: Theme.of(context).textTheme.bodyLarge,
                           ),
@@ -108,7 +107,7 @@ class _PlanPageState extends State<PlanPage> with AutomaticKeepAliveClientMixin 
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            '结束时间',
+                            'End time',
                             textAlign: TextAlign.center,
                             style: Theme.of(context).textTheme.bodyLarge,
                           ),

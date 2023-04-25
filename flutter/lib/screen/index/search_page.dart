@@ -42,10 +42,14 @@ class _SearchPageState extends State<SearchPage> with AutomaticKeepAliveClientMi
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          final address = await geoCode.reverseGeocoding(
-              latitude: _kCurPosition.latitude, longitude: _kCurPosition.longitude);
-          context.pushNamed(Routes.weather,
-              extra: HomeRouteData(_kCurPosition, address.city ?? address.countryName ?? ''));
+          try {
+            final address = await geoCode.reverseGeocoding(
+                          latitude: _kCurPosition.latitude, longitude: _kCurPosition.longitude);
+            context.pushNamed(Routes.weather,
+                          extra: HomeRouteData(_kCurPosition, address.city ?? address.countryName ?? ''));
+          } catch (e) {
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('An error occurred with the network request')));
+          }
         },
         child: const Icon(Icons.search),
       ),

@@ -14,7 +14,7 @@ class TravelPlanHive {
     _historyBox = await Hive.openBox('travelPlan');
   }
 
-  static putTravelPlan(TravelPlanModel model) {
-    _historyBox.put(DateTime.now().toString(), model);
+  static Future putTravelPlan(TravelPlanModel model) async {
+    await _historyBox.put(DateTime.now().toString(), model);
   }
 }

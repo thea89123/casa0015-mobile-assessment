@@ -4,7 +4,8 @@ part 'travel_plan_model.g.dart';
 
 @HiveType(typeId: 0)
 class TravelPlanModel {
-  TravelPlanModel(this.originPlace, this.targetPlace, this.startTime, this.endTime);
+  TravelPlanModel(
+      {this.originPlace = '', this.targetPlace = '', this.startTime = '', this.endTime = ''});
 
   @HiveField(0)
   String originPlace;

@@ -17,10 +17,10 @@ class TravelPlanModelAdapter extends TypeAdapter<TravelPlanModel> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return TravelPlanModel(
-      fields[0] as String,
-      fields[1] as String,
-      fields[2] as String,
-      fields[3] as String,
+      originPlace: fields[0] as String,
+      targetPlace: fields[1] as String,
+      startTime: fields[2] as String,
+      endTime: fields[3] as String,
     );
   }
 

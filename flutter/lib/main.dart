@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:country_code_picker/country_code_picker.dart';
 import 'package:evapp/model/storge/travel_plan_hive.dart';
 import 'package:evapp/screen/firebase/firebase_options.dart';
 import 'package:evapp/flutter_local_notifications.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       locale: const Locale('en'),
       localizationsDelegates: [
+        CountryLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         FirebaseUILocalizations.delegate,

@@ -48,20 +48,10 @@ In the end, Ming was satisfied that he had been given comprehensive weather info
 ## Design
 ![image](https://user-images.githubusercontent.com/91799774/167440009-32975829-d12b-4889-8aa2-150e19c5a012.png)
 
-## Screenshots
-Login workflow:
+## Video Demo
 
-![image](https://user-images.githubusercontent.com/91799774/167434793-2b982b79-f1fc-4005-859a-047b3181f994.png)
+[![Video Demo](https://img.youtube.com/vi/wZUHljQL_Co/0.jpg)](https://www.youtube.com/watch?v=wZUHljQL_Co)
 
-Tracker workflow:
-
-![image](https://user-images.githubusercontent.com/91799774/167436423-dccfe41f-af67-4eef-9359-f9c7d0b3a83d.png)
-
-
-Notes workflow:
-
-
-![image](https://user-images.githubusercontent.com/91799774/167446067-6aec374d-c576-42a7-82f4-8a29e18ea656.png)
 
 
 ## Challenges and Future improvement

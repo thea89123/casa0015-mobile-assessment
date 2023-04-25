@@ -65,14 +65,27 @@ Notes workflow:
 
 
 ## Challenges and Future improvement
-1. The login module remembers the login state through local storage. But the module is incomplete and allows login irrespective of the password or username. 
- By integrating Firebase utility, the app can actually support multiple users.
-2. Due to shortage of time, the app does not support the 'Add family' functionality yet. In future, a separate workflow needs to be added to Add new family/Add new member to your family.
-3. Due to the process of testing from a single phone, the location of all family members is shown as the same location. To test separate locations, I used the login functionality to login as multiple users at different locations. After firebase is integrated, it will be possible to record locations for multiple users.
-4. To demonstrate the utility of tracker application, two dummy ids[John and Tina] are provided in code if the person list is empty. This is just for demo.
-5. Images cutouts have been used to show different profiles on trackers and note page. In future, user would be able to customise the marker with their own picture.
-6. It is important to think about the ethical implications of sharing someone's location even though they are a family member and android app asks for location permissions. In future, the app could be enhanced with more options to stop and start sharing based on user's choice to make the app more secure.
 
+Challenges:
+1. Accuracy and reliability of weather data is a major challenge for the Weather Alert App due to uncertainty in weather forecasts and rapid changes in weather conditions.
+2. Developing new and innovative features, such as air quality monitoring and pollen counts, can provide users with even more useful and relevant information that can impact their health and well-being.
+
+Improvements:
+1. Personalized weather information and recommendations based on user behavior and preferences (e.g. analyzing travel history to provide tailored advice).
+2. Integration of social features to increase user engagement and expand the user base (e.g. allowing users to share travel plans and weather conditions with friends and family).
+
+## Build instructions
+1. Download the android project from the below github link
+    https://github.com/AbhipsaKar/CASA0015-Mine-AndroidAPP
+2. Rename project to mine_project.
+3. Set your HERE SDK credentials to
+    https://github.com/AbhipsaKar/CASA0015-Mine-AndroidAPP/blob/main/MineProject/android/app/src/main/AndroidManifest.xml
+4. Unzip the HERE SDK plugin for flutter and copy inside plugins folder in your project. Name the folder 'here_sdk': mine_project/plugins/here_sdk.
+5. Install the below dependencies for this project:
+    shared_preferences: ^2.0.5
+    provider: ^6.0.2
+    geolocator: ^8.2.0
+6. Start an emulator or simulator and execute flutter run from the app's directory - or run the app from within your IDE.
 
 ## References and links:
 1. https://codesource.io/build-a-simple-login-page-and-dashboard-with-flutter/
@@ -88,18 +101,17 @@ Notes workflow:
 6. https://stackoverflow.com/questions/41436639/does-shared-preferences-get-shared-across-user
 
 
-## Build instructions
-1. Download the android project from the below github link
-    https://github.com/AbhipsaKar/CASA0015-Mine-AndroidAPP
-2. Rename project to mine_project.
-3. Set your HERE SDK credentials to
-    https://github.com/AbhipsaKar/CASA0015-Mine-AndroidAPP/blob/main/MineProject/android/app/src/main/AndroidManifest.xml
-4. Unzip the HERE SDK plugin for flutter and copy inside plugins folder in your project. Name the folder 'here_sdk': mine_project/plugins/here_sdk.
-5. Install the below dependencies for this project:
-    shared_preferences: ^2.0.5
-    provider: ^6.0.2
-    geolocator: ^8.2.0
-6. Start an emulator or simulator and execute flutter run from the app's directory - or run the app from within your IDE.
+## Declaration of Authorship
+
+I, Yuxi Zheng, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+
+
+Yuxi Zheng
+2023.04.25
+
+## Contact Details
+I'm happy to receive any thought and suggestions about this app -- please do not hesitate to contact me through email: 📨 ucfnyz0@ucl.ac.uk. 
+
 
 
 

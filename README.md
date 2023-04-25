@@ -45,9 +45,6 @@ In the end, Ming was satisfied that he had been given comprehensive weather info
 ## UI Design
 ![image](https://github.com/thea89123/casa0015-mobile-assessment/blob/c40619a9e02cff2eddcded5c7d5460d4b9be3ccc/Weather%20Guardian/Frame%202.JPG)
 
-## Design
-![image](https://user-images.githubusercontent.com/91799774/167440009-32975829-d12b-4889-8aa2-150e19c5a012.png)
-
 ## Video Demo
 
 [![Video Demo](https://img.youtube.com/vi/wZUHljQL_Co/0.jpg)](https://www.youtube.com/watch?v=wZUHljQL_Co)

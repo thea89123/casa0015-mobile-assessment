@@ -40,16 +40,16 @@ class _IndexPageState extends State<IndexPage> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.wallet_travel),
-            label: 'Plan',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.map),
             label: 'Map',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.wallet_travel),
+            label: 'Plan',
           ),
         ],
         currentIndex: _selectedIndex,
@@ -65,9 +65,9 @@ class _IndexPageState extends State<IndexPage> {
         physics: const NeverScrollableScrollPhysics(),
         children: [
           HomePage(data: HomeRouteData(const LatLng(51.3028, 0), 'London')),
-          const PlanPage(),
           const MapPage(),
           const SearchPage(),
+          const PlanPage(),
         ],
       ),
     );

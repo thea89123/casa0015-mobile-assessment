@@ -71,34 +71,29 @@ Challenges:
 2. Developing new and innovative features, such as air quality monitoring and pollen counts, can provide users with even more useful and relevant information that can impact their health and well-being.
 
 Improvements:
-1. Personalized weather information and recommendations based on user behavior and preferences (e.g. analyzing travel history to provide tailored advice).
-2. Integration of social features to increase user engagement and expand the user base (e.g. allowing users to share travel plans and weather conditions with friends and family).
+1. In terms of future improvements, the Weather Alert App can provide more personalized weather information and recommendations based on each user's preferences and behavior. For example, the app could analyze a user's travel history and provide tailored advice on what to pack, what kind of transport to take, and what activities to do based on the weather conditions in the destination city.
+2. Another potential improvement is to integrate social features into the app, such as allowing users to share their travel plans and weather conditions with friends and family. This could increase user engagement and help the app to grow its user base. 
 
 ## Build instructions
 1. Download the android project from the below github link
-    https://github.com/AbhipsaKar/CASA0015-Mine-AndroidAPP
+   https://github.com/thea89123/casa0015-mobile-assessment.git
 2. Rename project to mine_project.
-3. Set your HERE SDK credentials to
-    https://github.com/AbhipsaKar/CASA0015-Mine-AndroidAPP/blob/main/MineProject/android/app/src/main/AndroidManifest.xml
-4. Unzip the HERE SDK plugin for flutter and copy inside plugins folder in your project. Name the folder 'here_sdk': mine_project/plugins/here_sdk.
-5. Install the below dependencies for this project:
-    shared_preferences: ^2.0.5
-    provider: ^6.0.2
-    geolocator: ^8.2.0
-6. Start an emulator or simulator and execute flutter run from the app's directory - or run the app from within your IDE.
+3. Android studio open.
+4. Set flutter version.
+5. Execute flutter pub get
+6. Start an emulator or simulator and execute flutter run from the app's directory.
+
+This application uses 1 colour cloud weather API, in addition it uses 2 services from Firebase: authentication and the Firestore database. Please replace the weather service function with your own API key. For the Firebase application, create a firebase project. Provide your own apiKey and other relevant information in Flutter, and place the firebase configured google-service.json file under the Andorid and ios directories.
 
 ## References and links:
-1. https://codesource.io/build-a-simple-login-page-and-dashboard-with-flutter/
-		
-2. https://instaflutter.com/flutter-tutorials/persistent-storage-flutter/#:~:text=The%20management%20and%20handling%20of%20such%20a%20state,was%20before%20the%20application%20has%20been%20shut%20off.
+
+1. https://codesource.io/build-a-simple-login-page-and-dashboard-with-flutter/		
 			
-3. https://github.com/heremaps/here-sdk-examples/tree/master/examples/latest/explore/flutter/hello_map_app
+2. https://github.com/heremaps/here-sdk-examples/tree/master/examples/latest/explore/flutter/hello_map_app
 		
-4. https://github.com/flutter/samples/tree/master/place_tracker
+3. https://github.com/flutter/samples/tree/master/place_tracker
 		
-5. https://betterprogramming.pub/flutter-how-to-save-objects-in-sharedpreferences-b7880d0ee2e4
-		
-6. https://stackoverflow.com/questions/41436639/does-shared-preferences-get-shared-across-user
+4. https://betterprogramming.pub/flutter-how-to-save-objects-in-sharedpreferences-b7880d0ee2e4
 
 
 ## Declaration of Authorship
